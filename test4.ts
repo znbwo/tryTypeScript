@@ -6,10 +6,10 @@ class Dog extends Animal {
 }
 
 
-interface NotOkay {
-    [x: string]: Animal;
-    [x: string]: Dog;
-}
+// interface NotOkay {
+//     [x: string]: Animal;
+//     [x: string]: Dog;
+// }
 
 // Error: indexing with a 'string' will sometimes get you a Dog!
 interface NotOkay2 {
@@ -18,7 +18,7 @@ interface NotOkay2 {
     // [x: number]: Dog;
 }
 
-interface Okay {
-    [x: string]: Animal;
-    [x: number]: Dog;//==[x: string]: Animal
-}
+// interface Okay {
+//     [x: string]: Animal;
+//     [x: number]: Dog;//==[x: string]: Animal
+// }

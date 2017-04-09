@@ -20,3 +20,7 @@ var Dog = (function (_super) {
     }
     return Dog;
 }(Animal));
+// interface Okay {
+//     [x: string]: Animal;
+//     [x: number]: Dog;//==[x: string]: Animal
+// } 
